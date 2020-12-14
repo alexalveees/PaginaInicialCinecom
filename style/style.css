@@ -1,0 +1,134 @@
+:root {
+  --maincolor:#a0088c;
+  --secondarycolor:#141414;
+  --whitecolor:#ffffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--secondarycolor);
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--whitecolor);
+}
+
+/* Header */
+
+header a {
+  text-decoration: none; 
+}
+
+header a .logo {
+  color: var(--maincolor);
+  font-family: Arial black, Helvetica, sans-serif;
+  font-size: 40px;
+  
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #e0dddd;
+  margin-right: 10px;
+  font-family: arial black;
+  
+}
+
+header nav a:hover{
+  color: var(--maincolor);
+}
+
+/* Main */
+
+main .main-movie {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/gameofthrones1.jpg');
+  height: 400px;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-movie .movie-title {
+  margin-top: 5%;
+  font-family: arial black;
+  font-size: 40px;
+  
+
+}
+
+.main-movie .description {
+  margin-top: 1%;
+  margin-bottom: 90px;
+  
+}
+
+.main-movie .container-button .button {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: var(--whitecolor);
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 13px;
+  font-family: arial black;
+  cursor: pointer;
+  transition: .3s ease all;
+  
+}
+
+.main-movie .container-button .button:hover {
+  background-color: var(--whitecolor);
+  color: var(--secondarycolor) ;
+}
+
+.main-movie .container-button .button i {
+  margin-right: 5px;
+}
+
+.container , .container-button {
+  margin-left: 20px;
+}
+
+.main-movie .container {
+  width: 80%;
+}
+
+.box-movie {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-movie {
+  margin-top: 5px;
+}
+
+
+@media screen and (max-width:700px) {
+ header .container{
+   display: flex;
+   flex-direction: column;
+ }
+
+ .container , .container-button {
+  margin-left: 11px;
+ }
+}
+
+@media screen and (min-width:1000px){
+  main .main-movie .description {
+    width: 50%;
+  }
+}
