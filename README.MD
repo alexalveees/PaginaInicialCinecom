@@ -1,5 +1,3 @@
 # Página inicial do Cinecom 
 
-###### Página web desenvolvida em HTML e CSS.
-
-
+###### Clone da página incial da Netflix utilizando HTML E CSS.
